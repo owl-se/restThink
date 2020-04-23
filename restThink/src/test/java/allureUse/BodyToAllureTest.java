@@ -27,7 +27,7 @@ public class BodyToAllureTest {
     @Test
     public void bodyTest() {
         User user = User.builder()
-                .name("Oleg")
+                .name("Alex")
                 .job("Automation")
                 .build();
 
@@ -38,6 +38,6 @@ public class BodyToAllureTest {
                 .post()
                 .then()
                 .log().body()
-                .body("name", equalTo("Oleg"));
+                .body("name", equalTo("Alex"));
     }
 }
