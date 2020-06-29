@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 public class ChartCreator {
 
     @Attachment
-    public static byte[] toLineChartPict(String title, String seriesName, Map<Ineteger, Long> data) throws InterruptedException {
+    public static byte[] toLineChartPict(String title, String seriesName, Map<Integer, Long> data) throws InterruptedException {
         int upperBound = (data.values().stream().max(Long::compare).get().intValue() / 1000 + 1) * 1000;
         ByteArrayOutputStream bas = new ByteArrayOutputStream();
 

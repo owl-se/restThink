@@ -1,5 +1,14 @@
 package performance;
 
+import io.restassured.http.ContentType;
+import io.restassured.response.ValidatableResponse;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
+import static io.restassured.RestAssured.given;
+
 public class RestAssuredThread extends Thread {
 
     private int threadNumber;
